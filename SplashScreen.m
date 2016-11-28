@@ -130,7 +130,7 @@ classdef SplashScreen < hgsetget
                 rethrow(ME);
             end
 
-            setappdata(0, 'splashscreen__', [SplashScreen.findAll(), self])
+            setappdata(0, 'splashscreen__', [SplashScreen.findall(), self])
 
             % Finally display the frame
             self.frame.setVisible(true);
